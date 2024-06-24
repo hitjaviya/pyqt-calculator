@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>443</width>
+    <height>732</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>443</width>
+    <height>732</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame{
+	background-color:rgb(0, 0, 0);
+}
+#button_frame{
+	border-bottom: 1px solid black;
+	border-radius:15px;
+}
+#button_frame QLineEdit{
+	background-color:#000000;
+	color:#FFF;
+	border:none;
+	hight:50px;
+	padding:10px 5px;
+	font-size: 70px;
+	font-family:&quot;Segoe UI&quot;;
+}
+#button_frame QPushButton{
+	background-color:#333333;
+	color:#FFF;
+	font-size:30px;
+	font-family:&quot;Helvetica&quot;;
+	border-radius: 50%;
+	width	:100px;
+	height:100px;
+}
+#button_frame QPushButton:pressed{
+	background-color:#555;
+}
+#button_frame #zero_btn {
+	text-align:centert;
+
+}
+
+#button_frame QPushButton[class=&quot;btn_group_1&quot;]{
+	border-radius:50%;
+	font-size:30px;
+	background-color:#a5a5a5;
+	color:#020202;
+}
+#button_frame QPushButton[class=&quot;btn_group_1&quot;]:pressed{
+	background-color:#d6d6d6;
+	
+}
+
+#button_frame QPushButton[class=&quot;btn_group_2&quot;]{
+	background-color:#ca3401;
+	font-size:30px;
+}
+
+#button_frame QPushButton[class=&quot;btn_group_2&quot;]:checked,
+#button_frame QPushButton[class=&quot;btn_group_2&quot;]:pressed{
+	background-color:#fff;
+
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="button_frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" colspan="4">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="Ans_LineEdit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="claer_btn">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>AC</string>
+        </property>
+        <property name="class" stdset="0">
+         <string>btn_group_1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="plus_minus_btn">
+        <property name="text">
+         <string>+/-</string>
+        </property>
+        <property name="class" stdset="0">
+         <string>btn_group_1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="percentage_btn">
+        <property name="text">
+         <string>%</string>
+        </property>
+        <property name="class" stdset="0">
+         <string>btn_group_1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="division_btn">
+        <property name="text">
+         <string>÷</string>
+        </property>
+        <property name="class" stdset="0">
+         <string>btn_group_2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="seven_btn">
+        <property name="text">
+         <string>7</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="eight_btn">
+        <property name="text">
+         <string>8</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="nine_btn">
+        <property name="text">
+         <string>9</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="multi_btn">
+        <property name="text">
+         <string>x</string>
+        </property>
+        <property name="class" stdset="0">
+         <string>btn_group_2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="four_btn">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="five_btn">
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="six_btn">
+        <property name="text">
+         <string>6</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="plus_btn">
+        <property name="text">
+         <string>+</string>
+        </property>
+        <property name="class" stdset="0">
+         <string>btn_group_2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="one_btn">
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="two_btn">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="three_btn">
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="minus_btn">
+        <property name="text">
+         <string>-</string>
+        </property>
+        <property name="class" stdset="0">
+         <string>btn_group_2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="ans_btn">
+        <property name="text">
+         <string>Ans</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QPushButton" name="equal_btn">
+        <property name="text">
+         <string>=</string>
+        </property>
+        <property name="class" stdset="0">
+         <string>btn_group_2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="zero_btn">
+        <property name="font">
+         <font>
+          <family>Helvetica</family>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="dot_btn">
+        <property name="text">
+         <string>.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
